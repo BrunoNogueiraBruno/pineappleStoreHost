@@ -10,10 +10,9 @@ const HOST_PATH = process.env.REACT_APP_HOST_PATH
 const deps = require('./package.json').dependencies
 module.exports = (_, argv) => ({
   output: {
-    publicPath: `${HOST_PATH}/`,
-    path: path.resolve(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js'
   },
-
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
   },
