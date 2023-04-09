@@ -1,14 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from "react"
+import ReactDOM from "react-dom"
 
-import { colorTheme } from 'ui/globalStyles'
 import Button from 'ui/Button'
 
-import "./index.css";
+import "./index.css"
 
 const App = () => (
   <div className="container">
-    <Button>Botão</Button>
+    App
+
+    <Button>Teste botão</Button>
   </div>
-);
-ReactDOM.render(<App />, document.getElementById("app"));
+)
+
+ReactDOM.render(<App />, document.getElementById("app"))
